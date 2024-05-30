@@ -35,10 +35,10 @@ export default{
 <!-- HTML -->
 <template>
 
-    <div class=" menu-fixed">
+    <header>
         <div class="container">
             <div class="d-flex">
-                <div class="coll-33"> 
+                <div class="col-33"> 
                     <!-- LINK MENU -->
                     <ul class="gender">
                         <li v-for="(menu, index) in menuHeader" 
@@ -48,20 +48,20 @@ export default{
                     </ul>
                 </div>
                 <!-- LOGO -->
-                <div class="coll-33 logo">
+                <div class="col-33 logo">
                     <a :href="`#${menuHeader[0].toLocaleLowerCase()}`">
                         <img :src="image" alt="logo" class="logo-img">                        
                     </a>
                 </div>
                 <!-- ICONE -->
-                <div class="coll-33 social">
+                <div class="col-33 social">
                     <img v-for="(socialIcon, index) in socialIcons" 
                     :key="index" :src="socialIcon.image" 
                     :alt="socialIcon.name">
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     
 </template>
 
@@ -76,7 +76,7 @@ $colorText2: #000;
 $shodow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 
-.menu-fixed {
+header {
     background-color: $background;
     position: fixed;
     left: 0;
@@ -100,7 +100,7 @@ $shodow: 0 0 10px rgba(0, 0, 0, 0.3);
     align-items: center;
 }
 
-.coll-33 {
+.col-33 {
     width: calc(100% / 3);
 }
 

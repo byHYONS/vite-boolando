@@ -6,8 +6,8 @@
         "originalPrice": "€29,99",
         "discount": "-50%",
         "sustainability": true,
-        "image": "./img/1.webp",
-        "image-2": "./img/1b.webp"
+        "image": "src/assets/img/1.webp",
+        "image2": "src/assets/img/1b.webp"
         
     },
     {
@@ -17,8 +17,8 @@
         "originalPrice": "€29,99",
         "discount": "-20%",
         "sustainability": false,
-        "image": "./img/2.webp",
-        "image-2": "./img/2b.webp"
+        "image": "src/assets/img/2.webp",
+        "image2": "src/assets/img/2b.webp"
     },
     {
         "brand": "Diesel",
@@ -27,8 +27,8 @@
         "originalPrice": "€129,99",
         "discount": "-30%",
         "sustainability": true,
-        "image": "./img/3.webp",
-        "image-2": "./img/3b.webp"
+        "image": "src/assets/img/3.webp",
+        "image2": "src/assets/img/3b.webp"
     },
     {
         "brand": "Levi's",
@@ -37,27 +37,27 @@
         "originalPrice": "€49,99",
         "discount": "-40%",
         "sustainability": false,
-        "image": "./img/4.webp",
-        "image-2": "./img/4b.webp"
+        "image": "src/assets/img/4.webp",
+        "image2": "src/assets/img/4b.webp"
     },
     {
         "brand": "D&G",
         "description": "STRIPE BODICE",
         "price": "€200,99",
-        "originalPrice": "non applicable",
-        "discount": "none",
+        "originalPrice": null,
+        "discount": null,
         "sustainability": true,
-        "image": "./img/5.webp",
-        "image-2": "./img/5b.webp"
+        "image": "src/assets/img/5.webp",
+        "image2": "src/assets/img/5b.webp"
     },
     {
         "brand": "Guess",
         "description": "MAGLIONE NERO",
         "price": "€39,99",
-        "originalPrice": "non applicable",
-        "discount": "none",
+        "originalPrice": null,
+        "discount": null,
         "sustainability": false,
-        "image": "./img/6.webp",
-        "image-2": "./img/6b.webp"
+        "image": "src/assets/img/6.webp",
+        "image2": "src/assets/img/6b.webp"
     }
 ]
