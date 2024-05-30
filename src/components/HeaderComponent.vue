@@ -38,17 +38,19 @@ export default{
         <div class="container">
             <div class="d-flex">
                 <div class="coll-33"> 
-                    <!-- LINK: UOMO, DONNA E BAMMBINO -->
+                    <!-- LINK MENU -->
                     <ul class="gender">
                         <li v-for="(menu, index) in menuHeader" 
                         :key="index">
-                        <a href="#" >{{ menu }}</a>
+                        <a :href="`#${menu.toLocaleLowerCase()}`" >{{ menu }}</a>
                         </li>
                     </ul>
                 </div>
                 <!-- LOGO -->
                 <div class="coll-33 logo">
-                    <img :src="image" alt="logo" class="logo-img">
+                    <a :href="`#${menuHeader[0].toLocaleLowerCase()}`">
+                        <img :src="image" alt="logo" class="logo-img">                        
+                    </a>
                 </div>
                 <!-- ICONE -->
                 <div class="coll-33 social">
@@ -101,7 +103,7 @@ export default{
         width: 9%;
         filter: invert(100%);
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.3s;
         &:hover {
             transform: scale(150%);
     }
@@ -129,6 +131,7 @@ export default{
 
 .logo{
     text-align: center;
+    a {text-decoration: none;}
     img {
         width: 60%;
     }
