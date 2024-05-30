@@ -1,6 +1,6 @@
 <script>
 export default {
-   nome: FooterComponent,
+   name: FooterComponent,
    data(){
       return{
 

@@ -1,6 +1,6 @@
 <script>
 export default {
-   nome: CardComponent,
+   name: CardComponent,
    data(){
       return{
 

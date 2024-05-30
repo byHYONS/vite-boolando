@@ -4,7 +4,7 @@ import CardComponent from './components/CardComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
 export default {
-  nome: AppBoolando,
+  name: AppBoolando,
   data(){
     return{
 
@@ -16,7 +16,7 @@ export default {
     FooterComponent,
   },
   methods: {
-    
+
   }
 
 }
