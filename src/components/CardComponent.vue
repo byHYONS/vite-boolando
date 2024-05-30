@@ -15,12 +15,17 @@ export default {
 
 <!-- HTML -->
 <template>
+
+    <div class="space"></div>
     
 </template>
 
 <!-- STYLE -->
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 
+.space {
+    height: 300px;
+}
 
 
 </style>

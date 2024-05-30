@@ -15,8 +15,9 @@ const socialIcons = [
         image: '../../img/instagram_6422200.svg',
         name: 'Istagram Icon'
     }
-]
+];
 
+// istanza Vue:
 export default{
     name: 'HeaderComponent',
     data(){
@@ -70,7 +71,8 @@ export default{
 
 // variabili:
 $background: #F06837;
-$colorText: white;
+$colorText: #fff;
+$colorText2: #000;
 $shodow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 
@@ -129,7 +131,9 @@ $shodow: 0 0 10px rgba(0, 0, 0, 0.3);
         font-family: "Ubuntu", sans-serif;
         font-size: 18px;
         text-decoration: none;
+        transition: 0.5s;
         &:hover{
+            color: $colorText2;
             text-transform: uppercase;
         }
     }
