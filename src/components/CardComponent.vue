@@ -1,6 +1,6 @@
 <script>
 export default {
-   name: CardComponent,
+   name: 'CardComponent',
    data(){
       return{
 
@@ -19,7 +19,7 @@ export default {
 </template>
 
 <!-- STYLE -->
-<style lang="sss" scoped>
+<style lang="sass" scoped>
 
 
 

@@ -1,6 +1,6 @@
 <script>
 export default {
-   name: FooterComponent,
+   name: 'FooterComponent',
    data(){
       return{
 
@@ -20,6 +20,6 @@ export default {
 </template>
 
 <!-- STYLE -->
-<style lang="sss" scoped>
+<style lang="sass" scoped>
 
 </style>
