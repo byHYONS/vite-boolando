@@ -1,9 +1,29 @@
 <script>
+
+// importo info menu:
+const menuHeader = ['Uomo', 'Donna', 'Bambino'];
+const socialIcons = [
+    {
+        image: '../../public/img/facebook_6422199.svg',
+        name: 'Facebook Icon'
+    },
+    {
+        image: '../../img/twitter_6422210.svg',
+        name: 'Twitter Icon'
+    },
+    {
+        image: '../../img/instagram_6422200.svg',
+        name: 'Istagram Icon'
+    }
+]
+
 export default{
     name: 'HeaderComponent',
     data(){
         return{
-
+            menuHeader,
+            socialIcons,
+            image: '../../img/boolean-logo.png',
         }
     }
 }
@@ -13,26 +33,28 @@ export default{
 
 <!-- HTML -->
 <template>
+
     <div class=" menu-fixed">
         <div class="container">
             <div class="d-flex">
                 <div class="coll-33"> 
                     <!-- LINK: UOMO, DONNA E BAMMBINO -->
                     <ul class="gender">
-                        <li><a href="#" >Uomo</a></li>
-                        <li><a href="#" >Donna</a></li>
-                        <li><a href="#" >Bambino</a></li>
+                        <li v-for="(menu, index) in menuHeader" 
+                        :key="index">
+                        <a href="#" >{{ menu }}</a>
+                        </li>
                     </ul>
                 </div>
                 <!-- LOGO -->
                 <div class="coll-33 logo">
-                    <img src="../../img/boolean-logo.png" alt="logo" class="logo-img">
+                    <img :src="image" alt="logo" class="logo-img">
                 </div>
                 <!-- ICONE -->
                 <div class="coll-33 social">
-                    <img src="../../public/img/facebook_6422199.svg" alt="icona">
-                    <img src="../../img/twitter_6422210.svg" alt="icona">
-                    <img src="../../img/instagram_6422200.svg" alt="icona">
+                    <img v-for="(socialIcon, index) in socialIcons" 
+                    :key="index" :src="socialIcon.image" 
+                    :alt="socialIcon.name">
                 </div>
             </div>
         </div>
