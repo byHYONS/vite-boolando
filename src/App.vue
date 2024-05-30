@@ -1,4 +1,7 @@
 <script>
+import HeaderComponent from './components/HeaderComponent.vue';
+import CardComponent from './components/CardComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   nome: AppBoolando,
@@ -8,17 +11,28 @@ export default {
     }
   },
   components: {
-
+    HeaderComponent,
+    CardComponent,
+    FooterComponent,
+  },
+  methods: {
+    
   }
+
 }
 
-// STRUTTURA APP
+
+
+
 </script>
 
-
+<!-- HTML -->
 <template>
-  
+  <HeaderComponent />
 
+  <CardComponent />
+
+  <FooterComponent />
 </template>
 
 
