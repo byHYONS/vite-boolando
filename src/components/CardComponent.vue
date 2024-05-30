@@ -37,29 +37,38 @@ export default {
                 v-for="(product, index) in products" :key="index">
                     <div class="card">
                         <div class="images">
+                            <!-- foto di default -->
                             <img  class="defoult-img"
                             :src="product.image" 
                             :alt="product.brand">
+                            <!-- foto hover -->
                             <img  class="hover-img"
                             :src="product.image2" 
                             :alt="product.brand">
                             
+                            <!-- sconto -->
                             <div class="discount">
                                 <span :class="{'percent': product.discount}">
                                     {{ product.discount }}
                                 </span>
+                                <!-- sostenibilità prodotto -->
                                 <span :class="{'tenability': product.sustainability}">
                                     {{ product.sustainability ? `sostenibilit&agrave;` : '' }}
                                 </span>
                             </div>
+                            <!-- liks -->
                             <div class="heart">
                                 <span>&hearts;</span>
                             </div>
                         </div>
                         <div class="text">
+                            <!-- nome brand -->
                             <span class="brand">{{ product.brand }}</span>
+                            <!-- descrizione prodotto -->
                             <h4>{{ product.description }}</h4>
+                            <!-- prezzo -->
                             <span class="new-price">{{ product.price }}</span>
+                            <!-- vecchio prezzo -->
                             <span class="old-price">
                                 {{ product.originalPrice ? product.originalPrice : '' }}
                             </span>
