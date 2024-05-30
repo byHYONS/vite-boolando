@@ -68,15 +68,21 @@ export default{
 <!-- STYLE -->
 <style lang="scss" scoped>
 
+// variabili:
+$background: #F06837;
+$colorText: white;
+$shodow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+
 .menu-fixed {
-    background-color: #F06837;
+    background-color: $background;
     position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
     height: 60px;
     z-index: 100;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: $shodow;
     align-content: center;
 }
 
@@ -119,7 +125,7 @@ export default{
     }
     a  {
         text-decoration: none;
-        color: white;
+        color: $colorText;
         font-family: "Ubuntu", sans-serif;
         font-size: 18px;
         text-decoration: none;
