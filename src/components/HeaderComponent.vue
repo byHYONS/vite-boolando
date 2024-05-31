@@ -70,11 +70,7 @@ export default{
 <style lang="scss" scoped>
 
 // variabili:
-$background: #F06837;
-$colorText: #fff;
-$colorText2: #000;
-$shodow: 0 0 10px rgba(0, 0, 0, 0.3);
-
+@use '../scss/partials/header-variables' as *;
 
 header {
     background-color: $background;
@@ -86,11 +82,6 @@ header {
     z-index: 100;
     box-shadow: $shodow;
     align-content: center;
-}
-
-.container {
-    width: 70%;
-    margin: 0 auto;
 }
 
 .d-flex {

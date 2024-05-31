@@ -68,15 +68,12 @@ export default {
 <style lang="scss" scoped>
 
 // variabili:
-$background: rgb(26, 26, 26);
-$borderTop: rgb(237, 58, 52);
-$colorText: #fff;
-$height: 100px;
+@use '../scss/partials/footer-variables' as *;
 
 
 footer {
     font-family: "Ubuntu", sans-serif;
-    width: 100vw;
+    width: $width;
     justify-content: center;
     align-content: center;
     height: $height;
@@ -87,11 +84,6 @@ footer {
         color: $colorText;
 
     }
-}
-
-.container {
-    width: 70%;
-margin: 0 auto;
 }
 
 .d-flex {

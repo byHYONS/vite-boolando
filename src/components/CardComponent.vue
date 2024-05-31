@@ -85,18 +85,13 @@ export default {
 <!-- STYLE -->
 <style lang="scss" scoped>
 // variabili:
-$background: #fff;
+@use '../scss/partials/component-variables' as *;
 
 main {
     background-color: $background;
     margin-top: 100px;
     margin-bottom: 50px;
-    width: 100vw;
-}
-
-.container {
-    width: 70%;
-    margin: 0 auto;
+    width: $width;
 }
 
 .d-flex {
@@ -128,14 +123,15 @@ main {
 
 /* DISCOUNT */
 .percent {
-    background-color: rgb(237, 58, 52);
-    color: white;
+    background-color: $percScontBG;
+    color: $text1;
     padding: 3px;
+    margin-right: 5px;
 }
 
 .tenability {
-    background-color: rgb(57, 130, 29);
-    color: white;
+    background-color: $sostenBG;
+    color: $text1;
     padding: 3px;
     margin-right: 3px;
 }
@@ -146,11 +142,11 @@ main {
     right: 0;
     top: 25px;
     font-size: 25px;
-    background-color: white;
+    background-color: $background;
     padding: 3px 10px;
 }
 
-.heart:hover {color: red;}
+.heart:hover {color: $text2;}
 
 /* TESTO CARD */
 .text {margin-bottom: 50px;}
@@ -164,7 +160,8 @@ main {
 
 .new-price {
     font-weight: 600;
-    color: rgb(237, 58, 52);
+    color: $text2;
+    margin-right: 5px;
 }
 
 .old-price {text-decoration: line-through;}
