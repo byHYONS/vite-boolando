@@ -1,21 +1,7 @@
 <script>
 
 // importo info menu:
-const menuHeader = ['Uomo', 'Donna', 'Bambino'];
-const socialIcons = [
-    {
-        image: '../../public/img/facebook_6422199.svg',
-        name: 'Facebook Icon'
-    },
-    {
-        image: '../../img/twitter_6422210.svg',
-        name: 'Twitter Icon'
-    },
-    {
-        image: '../../img/instagram_6422200.svg',
-        name: 'Istagram Icon'
-    }
-];
+import menuHeader from '../data/menu.json';
 
 // istanza Vue:
 export default{
@@ -23,8 +9,6 @@ export default{
     data(){
         return{
             menuHeader,
-            socialIcons,
-            image: '../../img/boolean-logo.png',
         }
     }
 }
@@ -41,7 +25,7 @@ export default{
                 <div class="col-33"> 
                     <!-- LINK MENU -->
                     <ul class="gender">
-                        <li v-for="(menu, index) in menuHeader" 
+                        <li v-for="(menu, index) in menuHeader.menuItem" 
                         :key="index">
                         <a :href="`#${menu.toLocaleLowerCase()}`" >{{ menu }}</a>
                         </li>
@@ -49,13 +33,13 @@ export default{
                 </div>
                 <!-- LOGO -->
                 <div class="col-33 logo">
-                    <a :href="`#${menuHeader[0].toLocaleLowerCase()}`">
-                        <img :src="image" alt="logo" class="logo-img">                        
+                    <a :href="`#${menuHeader.menuItem[0].toLocaleLowerCase()}`">
+                        <img :src="menuHeader.logoImage" alt="logo" class="logo-img">                        
                     </a>
                 </div>
                 <!-- ICONE -->
                 <div class="col-33 social">
-                    <img v-for="(socialIcon, index) in socialIcons" 
+                    <img v-for="(socialIcon, index) in menuHeader.socialIcons" 
                     :key="index" :src="socialIcon.image" 
                     :alt="socialIcon.name">
                 </div>

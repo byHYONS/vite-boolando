@@ -1,31 +1,14 @@
 <script>
 
 // importo info menu:
-const policies = ['Privacy Policy', 'Cookie Police', 'Terms & Conditions'];
-const socialIcons = [
-    {
-        image: '../../public/img/facebook_6422199.svg',
-        name: 'Facebook Icon'
-    },
-    {
-        image: '../../img/twitter_6422210.svg',
-        name: 'Twitter Icon'
-    },
-    {
-        image: '../../img/instagram_6422200.svg',
-        name: 'Istagram Icon'
-    }
-];
+import menuFooter from '../data/footer.json';
 
 // istanza Vue:
 export default {
    name: 'FooterComponent',
    data(){
       return{
-        policies,
-        socialIcons,
-        nameBrand: 'Bulando Srl',
-        messageSocial: 'Vienici a trovare su:'
+        menuFooter,
       }
    }
 }
@@ -40,11 +23,11 @@ export default {
             <div class="d-flex">
                 <!-- nome brand -->
                 <div class="col-50">
-                    <h3> {{ nameBrand }} </h3>
+                    <h3> {{ menuFooter.nameBrand }} </h3>
                     <div class="">
                         <ul class="policy">
                             <!-- policy -->
-                            <li v-for="(policy, index) in policies" 
+                            <li v-for="(policy, index) in menuFooter.menuItem" 
                             :key="index">
                             <a :href="`#${policy.toLocaleLowerCase()}`" >{{ policy }}</a>
                         </li>
@@ -53,8 +36,8 @@ export default {
                 </div>
                 <div class="col-50 social">
                     <!-- social -->
-                    <h5> {{ messageSocial }} </h5>
-                    <img v-for="(socialIcon, index) in socialIcons" 
+                    <h5> {{ menuFooter.messageSocial }} </h5>
+                    <img v-for="(socialIcon, index) in menuFooter.socialIcons" 
                     :key="index" :src="socialIcon.image" 
                     :alt="socialIcon.name">
                 </div>

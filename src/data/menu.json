@@ -1,0 +1,21 @@
+
+{
+    "logoImage": "../../img/boolean-logo.png",
+    "menuItem": [
+        "Uomo",
+        "Donna",
+        "Bambino"
+    ],
+    "socialIcons": [{
+        "image": "../../public/img/facebook_6422199.svg",
+        "name": "Facebook Icon"
+    },
+    {
+        "image": "../../img/twitter_6422210.svg",
+        "name": "Twitter Icon"
+    },
+    {
+        "image": "../../img/instagram_6422200.svg",
+        "name": "Istagram Icon"
+    }]
+}

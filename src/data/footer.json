@@ -1,0 +1,22 @@
+{
+    "logoImage": "../../img/boolean-logo.png",
+    "nameBrand":"Bulando Srl",
+    "messageSocial": "Vienici a trovare su:",
+    "menuItem": [
+        "Privacy Policy",
+        "Cookie Police",
+        "Terms & Conditions"
+    ],
+    "socialIcons": [{
+        "image": "../../public/img/facebook_6422199.svg",
+        "name": "Facebook Icon"
+    },
+    {
+        "image": "../../img/twitter_6422210.svg",
+        "name": "Twitter Icon"
+    },
+    {
+        "image": "../../img/instagram_6422200.svg",
+        "name": "Istagram Icon"
+    }]
+}

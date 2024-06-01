@@ -1,7 +1,7 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
-import CardComponent from './components/CardComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import ProductComponent from './components/ProductComponent.vue';
 
 export default {
   name: 'AppBoolando',
@@ -12,13 +12,9 @@ export default {
   },
   components: {
     HeaderComponent,
-    CardComponent,
+    ProductComponent,
     FooterComponent,
   },
-  methods: {
-
-  }
-
 }
 
 
@@ -30,7 +26,7 @@ export default {
 <template>
   <HeaderComponent />
 
-  <CardComponent />
+  <ProductComponent />
 
   <FooterComponent />
 </template>
