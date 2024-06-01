@@ -7,7 +7,8 @@
         "discount": "-50%",
         "sustainability": true,
         "image": "src/assets/img/1.webp",
-        "image2": "src/assets/img/1b.webp"
+        "image2": "src/assets/img/1b.webp",
+        "isInFavorites": false
         
     },
     {
@@ -18,7 +19,8 @@
         "discount": "-20%",
         "sustainability": false,
         "image": "src/assets/img/2.webp",
-        "image2": "src/assets/img/2b.webp"
+        "image2": "src/assets/img/2b.webp",
+        "isInFavorites": false
     },
     {
         "brand": "Diesel",
@@ -28,7 +30,8 @@
         "discount": "-30%",
         "sustainability": true,
         "image": "src/assets/img/3.webp",
-        "image2": "src/assets/img/3b.webp"
+        "image2": "src/assets/img/3b.webp",
+        "isInFavorites": true
     },
     {
         "brand": "Levi's",
@@ -38,7 +41,8 @@
         "discount": "-40%",
         "sustainability": false,
         "image": "src/assets/img/4.webp",
-        "image2": "src/assets/img/4b.webp"
+        "image2": "src/assets/img/4b.webp",
+        "isInFavorites": false
     },
     {
         "brand": "D&G",
@@ -48,7 +52,8 @@
         "discount": null,
         "sustainability": true,
         "image": "src/assets/img/5.webp",
-        "image2": "src/assets/img/5b.webp"
+        "image2": "src/assets/img/5b.webp",
+        "isInFavorites": true
     },
     {
         "brand": "Guess",
@@ -58,6 +63,7 @@
         "discount": null,
         "sustainability": false,
         "image": "src/assets/img/6.webp",
-        "image2": "src/assets/img/6b.webp"
+        "image2": "src/assets/img/6b.webp",
+        "isInFavorites": true
     }
 ]

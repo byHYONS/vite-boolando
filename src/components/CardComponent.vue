@@ -36,7 +36,10 @@ export default {
             </div>
             <!-- liks -->
             <div class="heart">
-                <span>&hearts;</span>
+                <span
+                :class="{'favorite': products.isInFavorites}"
+                >&hearts;
+                </span>
             </div>
         </div>
         <div class="text">
@@ -92,7 +95,8 @@ export default {
         font-size: 25px;
         background-color: $background;
         padding: 3px 10px;
-        &:hover {color: $text2;}
+        span.favorite {color: $text2;}
+        // &:hover {color: $text2;}
     }
     .text {margin-bottom: 50px;}        // testo card
     .brand {font-size: 12px;}
