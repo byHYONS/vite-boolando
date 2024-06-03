@@ -5,14 +5,14 @@ import CardComponent from './CardComponent.vue';
 
 // import file products:
 import products from '../data/products.json';
-import products2 from '../data/db.json';
+// import products2 from '../data/db.json';
 
 export default {
    name: 'ProductComponent',
    data(){
       return{
         products,
-        products2,
+        // products2,
       }
    },
    components: {
@@ -28,14 +28,6 @@ export default {
 <!-- HTML -->
 <template>
     
-    <div class="col-33" 
-    v-for="(product, index) in products" :key="index">
-    
-        
-
-    </div>
-
-
     <main>
         <div class="container">
             <div class="d-flex">
